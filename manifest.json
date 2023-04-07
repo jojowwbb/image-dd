@@ -2,6 +2,7 @@
     "manifest_version": 3,
     "name": "DragImage",
     "version": "0.0.1",
+    "description": "网页图片下载器。通过拖拽图片的形式直接下载。",
     "icons": { 
         "16": "icon16.png",
         "48": "icon48.png",
@@ -10,7 +11,7 @@
     "content_scripts": [
         {
           "matches": ["https://*/*"],
-          "js": ["src/index.js"]
+          "js": ["src/js-file-downloader.min.js","src/index.js"]
         }
       ]
 }
